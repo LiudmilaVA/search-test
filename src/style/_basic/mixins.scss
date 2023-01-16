@@ -1,0 +1,17 @@
+@mixin font($fz, $lh, $fw: 300) {
+    font-weight: $fw;
+    font-size: #{$fz}px;
+    line-height: #{$lh}px;
+  }
+  
+  @mixin bgImage($size: cover, $positionX: center, $positionY: center) {
+    background-repeat: no-repeat;
+    background-size: $size;
+    background-position: $positionX $positionY;
+  }
+  
+  @mixin mgCenter() {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

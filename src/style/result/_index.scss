@@ -1,0 +1,28 @@
+.result {
+    width: 100%;
+    border-collapse: collapse;
+
+    &-title {
+        padding: 8px 20px;
+        @include font(20, 28, 500);
+        text-align: center;
+        color: $primary;
+        background-color: #d3d8de;
+        border: none;
+    }
+
+    &-data {
+        padding: 10px 5px;
+        @include font(14, 20);
+        color: $black;
+    }
+
+    & tbody {
+        & .result-row {
+            &:nth-child(even) {
+                background-color: $secondary;
+            }
+        }   
+    
+    }
+}

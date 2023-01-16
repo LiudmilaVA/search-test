@@ -1,0 +1,44 @@
+.search {
+    padding: 50px 0;
+
+    &--wrap {
+        @include mgCenter();
+        margin-bottom: 35px;
+        max-width: 350px;
+    }
+
+    &-field {
+        margin-bottom: 20px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 25px;
+            height: 25px;
+            right: 5px;
+            top: calc((100% - 25px) / 2);
+            background-image: url('../../img/icons/search-search-svgrepo-com.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        & .field {
+            padding-right: 35px;
+        }
+    }
+
+    &-result {
+
+    }
+
+    &-message {
+        margin-bottom: 15px;
+        @include font(16, 20);
+        text-align: center;
+    }
+
+    &-highlighter {
+        background-color: $warning;
+    }
+}

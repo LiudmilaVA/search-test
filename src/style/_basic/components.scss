@@ -1,0 +1,45 @@
+.container {
+    @include mgCenter();
+    max-width: 1200px;
+    width: 100%;
+}
+
+.btn {
+    margin: 0;
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        transition: all .3s ease-in-out;
+        opacity: .7;
+    }
+
+    &-main {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+.field {
+    display: block;
+    padding: 8px 10px;
+    width: 100%;
+    min-height: 40px;
+    @include font(16, 22);
+    color: $black;
+    border: 1px solid grey;
+    border-radius: 6px;
+    outline: none;
+
+    &:focus {
+        border-color: $success;
+    }
+}
+
+  

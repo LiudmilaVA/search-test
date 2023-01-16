@@ -1,0 +1,11 @@
+.hightlighter {
+    &-holder {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &-btn {
+        margin-left: 18px;
+    }
+}
